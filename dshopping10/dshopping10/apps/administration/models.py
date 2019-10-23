@@ -41,7 +41,7 @@ class Clients (models.Model):
     email = models.EmailField ('E-mail', max_length=200)
     password = models.CharField ('Password', max_length=500)
     id_country = models.ForeignKey (Country, on_delete=models.CASCADE)
-    photo = models.ImageField('Image client', null=True, blank=True, upload_to='Authors/')
+    photo = models.ImageField('Image client', null=True, blank=True, upload_to='ImgProfile/')
     credit_card_number = models.IntegerField ('Credit card number')
     class Meta:
         verbose_name = 'Client'
